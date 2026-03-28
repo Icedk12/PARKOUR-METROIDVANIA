@@ -44,11 +44,11 @@ public partial class Player : CharacterBody2D
         Vector2 velocity = Velocity;
         float direction = Input.GetAxis("move_left", "move_right");
 
-        // --- 1. Timers ---
+        // --- Timers ---
         if (_slideCooldownTimer > 0)
             _slideCooldownTimer -= (float)delta;
 
-        // --- 2. Gravity & Jump Reset ---
+        // --- Gravity & Jump Reset ---
         if (!IsOnFloor())
         {
             velocity.Y += Gravity * (float)delta;
@@ -58,11 +58,11 @@ public partial class Player : CharacterBody2D
             _airJumpsReached = 0;
         }
 
-        // --- 3. Flipping the Sprite ---
+        // --- Flipping the Sprite ---
         if (direction > 0) _sprite.FlipH = false;
         else if (direction < 0) _sprite.FlipH = true;
 
-        // --- 4. Jumping ---
+        // --- Jumping ---
         if (Input.IsActionJustPressed("jump"))
         {
             if (IsOnFloor())
@@ -76,7 +76,7 @@ public partial class Player : CharacterBody2D
             }
         }
 
-        // --- 5. Sliding Logic ---
+        // --- Sliding Logic ---
         if (Input.IsActionJustPressed("slide") && IsOnFloor() && _slideCooldownTimer <= 0)
         {
             isSliding = true;
@@ -91,7 +91,7 @@ public partial class Player : CharacterBody2D
             isSliding = false;
         }
 
-        // --- 6. Horizontal Movement ---
+        // --- Horizontal Movement ---
         if (isSliding)
         {
             velocity.X = Mathf.MoveToward(velocity.X, 0, Friction * 0.5f * (float)delta);
