@@ -8,8 +8,9 @@ size = Vector2(117, 114)
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1776459853]
 script = ExtResource("1_kpjcp")
-Gravity = 3000.0
 Friction = 3400.0
+Gravity = 3000.0
+UltraSlideBoost = 1.7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1838734320]
 position = Vector2(-2.4999998, -17)
@@ -21,9 +22,11 @@ scale = Vector2(12.815755, 12.561432)
 texture = ExtResource("2_kyqiw")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=83189451]
+zoom = Vector2(0.5, 0.5)
 
 [node name="Label" type="Label" parent="." unique_id=154296167]
 offset_left = -63.0
 offset_top = -103.0
 offset_right = 59.0
 offset_bottom = -80.0
+horizontal_alignment = 1
