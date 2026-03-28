@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bal0pes2qpd6v"
-path="res://.godot/imported/9bitdwarfTEST.png-5e729db5fed714c446f15325010d26b6.ctex"
+uid="uid://dsmp847r5c84j"
+path="res://.godot/imported/11x11dwarf_normal.png-d28afa70df0f822277531e34a19081a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/9bitdwarfTEST.png"
-dest_files=["res://.godot/imported/9bitdwarfTEST.png-5e729db5fed714c446f15325010d26b6.ctex"]
+source_file="res://Sprites/11x11dwarf_normal.png"
+dest_files=["res://.godot/imported/11x11dwarf_normal.png-d28afa70df0f822277531e34a19081a9.ctex"]
 
 [params]
 
