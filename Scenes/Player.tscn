@@ -1,25 +1,32 @@
 [gd_scene format=3 uid="uid://vas8t1xkqa8f"]
 
 [ext_resource type="Script" uid="uid://c8h1o366fogir" path="res://Scripts/Player.cs" id="1_kpjcp"]
-[ext_resource type="Texture2D" uid="uid://jo7prf4mtqiq" path="res://Sprites/icon.svg" id="1_xhfnw"]
+[ext_resource type="Texture2D" uid="uid://bal0pes2qpd6v" path="res://Sprites/9bitdwarfTEST.png" id="2_kyqiw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kpjcp"]
-size = Vector2(123, 114)
+size = Vector2(117, 114)
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1776459853]
 script = ExtResource("1_kpjcp")
-Speed = 600.0
-JumpVelocity = -1000.0
-max_jumps = 0
-air_jump_velocity = -1000.0
+Friction = 3400.0
+Gravity = 3000.0
+UltraSlideBoost = 1.7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1838734320]
 position = Vector2(-2.4999998, -17)
 shape = SubResource("RectangleShape2D_kpjcp")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1090818489]
-position = Vector2(-2.5000045, -15.999998)
-scale = Vector2(0.92968744, 0.84375)
-texture = ExtResource("1_xhfnw")
+position = Vector2(-2.000001, -17)
+scale = Vector2(12.815755, 12.561432)
+texture = ExtResource("2_kyqiw")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=83189451]
+zoom = Vector2(0.5, 0.5)
+
+[node name="Label" type="Label" parent="." unique_id=154296167]
+offset_left = -63.0
+offset_top = -103.0
+offset_right = 59.0
+offset_bottom = -80.0
+horizontal_alignment = 1

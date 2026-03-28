@@ -1,0 +1,16 @@
+[gd_resource type="ParticleProcessMaterial" format=3 uid="uid://cgcec87f3iwqu"]
+
+[resource]
+particle_flag_damping_as_friction = true
+emission_shape_scale = Vector3(1, 1, 2)
+emission_shape = 1
+emission_sphere_radius = 1.0
+inherit_velocity_ratio = 0.176
+angular_velocity_min = -1.6093254e-05
+angular_velocity_max = 88.61998
+radial_velocity_min = -2.2351742e-05
+radial_velocity_max = -2.2351742e-05
+gravity = Vector3(100, 0, 0)
+scale_max = 2.5
+sub_emitter_mode = 4
+sub_emitter_amount_at_start = 1
